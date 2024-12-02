@@ -21,7 +21,7 @@ public class Dec_01b {
         .forEach(
             pair -> {
               var leftNum = Integer.parseInt(pair[0].trim(), 10);
-              var rightNum = Integer.parseInt(pair[1].trim());
+              var rightNum = Integer.parseInt(pair[1].trim(), 10);
               leftList.add(leftNum);
               rightAppearances
                   .computeIfAbsent(rightNum, x -> new AtomicInteger())
